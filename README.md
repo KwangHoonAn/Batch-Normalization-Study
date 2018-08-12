@@ -19,7 +19,7 @@ So, we can apply same idea to hidden layers units!
 
 ### Problem in neural networks
 
-Let's think about cat detection scenario, Neural networks model has been trained using "Black cat" with a label "cat" (Example from the youtube tutorial). If "Orange cat" is tested, performance would not be excellent as we want. This is because the data distribution of black cat, **P(black|cat)** and **P(Orange|cat)** are slightly different and Our training objective has been trained with **P(cat|black cat)**. This problem is called **Internal Covariate Shift**
+Let's think about cat detection scenario, Neural networks model has been trained using "Black cat" with a label "cat" (Example from the youtube tutorial). If "Orange cat" is tested, performance would not be excellent as we want. This is because the data distribution of black cat, **P(black cat)** and **P(Orange cat)** are slightly different and Our training objective has been trained with **P(cat|black cat)**. This problem is called **Internal Covariate Shift**
 
 In perspective of neural network learning porcess, input from earlier layers will keep chainging during training by different input data distribution ( Internal Covariate shift ). This will make next layers to adopt earlier layers distribution, which means **next layers will suffer from Internal Covariate shift**.
 
