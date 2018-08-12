@@ -4,6 +4,7 @@ This repository is to study, summarize what batch normalization is for my machin
 
 * [Awesome blog about batch normalization summary](https://r2rt.com/implementing-batch-normalization-in-tensorflow.html)
 * [Youtube tutorial from Deeplearning.AI ](https://www.youtube.com/watch?v=tNIpEZLv_eg)
+* [Very intuitive implementation of Batch normalization using Tensorflow](https://r2rt.com/implementing-batch-normalization-in-tensorflow.html)
 
 ## Motivations
 
@@ -30,3 +31,8 @@ Gamma, beta are trainable parameters these two parameters help layers distributi
 ### Regularization effect
 
 Inputs within mini-batch will be scaled by batch normalization. In other words, mini batch inputs will no longer keep **whole data distribution** by being scaled by **mini batch mean and variance**. We can consider as **noise is added to the inputs**. This will play a role similar to dropout
+
+### Programming
+
+I implemented batch normalization only training part to understand the mechanism of batch normalization and its simple effect.
+For plotting part, I refer to above implementation link - [Very intuitive implementation of Batch normalization using Tensorflow]
