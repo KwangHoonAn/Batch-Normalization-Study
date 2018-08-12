@@ -23,6 +23,10 @@ Let's think about cat detection scenario, Neural networks model has been trained
 
 In perspective of neural network learning porcess, input from earlier layers will keep chainging during training by different input data distribution ( Internal Covariate shift ). This will make next layers to adopt earlier layers distribution, which means **next layers will suffer from Internal Covariate shift**.
 
+### Mathematical term explanation
+Other parts are very tedious, calculate mean and variance of each batch.
+Gamma, beta are trainable parameters these two parameters help layers distribution to have non-zero mean(centering in non-zero), epsilon is needed to avoid zero denominator case
+
 ### Regularization effect
 
 Inputs within mini-batch will be scaled by batch normalization. In other words, mini batch inputs will no longer keep **whole data distribution** by being scaled by **mini batch mean and variance**. We can consider as **noise is added to the inputs**. This will play a role similar to dropout
